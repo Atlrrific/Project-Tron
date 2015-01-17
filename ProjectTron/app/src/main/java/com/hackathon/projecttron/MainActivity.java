@@ -43,6 +43,7 @@ public class MainActivity extends Activity {
     private View mView;
     private ArrayList<Point> myPath = new ArrayList<Point>();
     private ArrayList<Point> hisPath = new ArrayList<Point>();
+    private boolean running;
     private float posX;
     private float posY;
     private float yAug;
@@ -94,12 +95,13 @@ public class MainActivity extends Activity {
         handler.post(new Runnable(){
             @Override
             public void run() {
-                yAug = posY - 180;
-                xAug = posX - 320;
+                if(running){
+                    yAug = posY - 180;
+                    xAug = posX - 320;
+                }
                 handler.postDelayed(this, 500);
             }
         });
-
     }
 
     @Override
@@ -112,6 +114,10 @@ public class MainActivity extends Activity {
     protected void onPause() {
         mCardScroller.deactivate();
         super.onPause();
+    }
+
+    public void onDead() {
+
     }
 
     /**

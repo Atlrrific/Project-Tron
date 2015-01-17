@@ -23,7 +23,16 @@ def user(id):
 @app.route('/coordinates', methods=['POST'])
 def coordinates():
     usr_object = request.get_json(force=True)
-    insert_query = collection.update({'_id':usr_object['_id']}, {'posX': usr_object['posX'], 'posY': usr_object['posY'], 'counter':usr_object['counter']},upsert=True)
+    user = collection.find_one({'_id' : usr_object['_id']}) 
+    
+    if user is None:
+        collection.insert({ '_id' : usr_object['_id'],
+                            'coordinates': []
+        })
+
+    insert_query = collection.update({'_id' : usr_object['_id']},
+                                     {'coordinates': user['coordinates'].append((usr_object['latitude'], usr_object['longitude'])},
+                                      upsert=True)
     result = {
         'success': 'False'    
     }

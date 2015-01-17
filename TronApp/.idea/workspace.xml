@@ -44,23 +44,23 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MapBoxAndroidDemo/src/main/java/com/mapbox/mapboxandroiddemo/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5575" vertical-offset="617" max-vertical-offset="4065">
-              <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.8575" vertical-offset="1157" max-vertical-offset="4080">
+              <caret line="100" column="64" selection-start-line="100" selection-start-column="64" selection-end-line="100" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2169#2200#0" expanded="true" />
-                <element signature="e#4157#4191#0" expanded="true" />
-                <element signature="e#5995#6026#0" expanded="true" />
-                <element signature="e#6097#6131#0" expanded="true" />
-                <element signature="e#6200#6232#0" expanded="true" />
-                <element signature="e#6302#6335#0" expanded="true" />
-                <element signature="e#6404#6436#0" expanded="true" />
-                <element signature="e#6504#6535#0" expanded="true" />
-                <element signature="e#6606#6640#0" expanded="true" />
-                <element signature="e#8173#8447#0" expanded="true" />
-                <element signature="e#8436#8437#0" expanded="true" />
-                <element signature="e#8536#8701#0" expanded="true" />
-                <element signature="e#8690#8691#0" expanded="true" />
+                <element signature="e#4206#4240#0" expanded="true" />
+                <element signature="e#6044#6075#0" expanded="true" />
+                <element signature="e#6146#6180#0" expanded="true" />
+                <element signature="e#6249#6281#0" expanded="true" />
+                <element signature="e#6351#6384#0" expanded="true" />
+                <element signature="e#6453#6485#0" expanded="true" />
+                <element signature="e#6553#6584#0" expanded="true" />
+                <element signature="e#6655#6689#0" expanded="true" />
+                <element signature="e#8222#8496#0" expanded="true" />
+                <element signature="e#8485#8486#0" expanded="true" />
+                <element signature="e#8585#8750#0" expanded="true" />
+                <element signature="e#8739#8740#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -988,23 +988,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MapBoxAndroidDemo/src/main/java/com/mapbox/mapboxandroiddemo/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5575" vertical-offset="617" max-vertical-offset="4065">
-          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.8575" vertical-offset="1157" max-vertical-offset="4080">
+          <caret line="100" column="64" selection-start-line="100" selection-start-column="64" selection-end-line="100" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2169#2200#0" expanded="true" />
-            <element signature="e#4157#4191#0" expanded="true" />
-            <element signature="e#5995#6026#0" expanded="true" />
-            <element signature="e#6097#6131#0" expanded="true" />
-            <element signature="e#6200#6232#0" expanded="true" />
-            <element signature="e#6302#6335#0" expanded="true" />
-            <element signature="e#6404#6436#0" expanded="true" />
-            <element signature="e#6504#6535#0" expanded="true" />
-            <element signature="e#6606#6640#0" expanded="true" />
-            <element signature="e#8173#8447#0" expanded="true" />
-            <element signature="e#8436#8437#0" expanded="true" />
-            <element signature="e#8536#8701#0" expanded="true" />
-            <element signature="e#8690#8691#0" expanded="true" />
+            <element signature="e#4206#4240#0" expanded="true" />
+            <element signature="e#6044#6075#0" expanded="true" />
+            <element signature="e#6146#6180#0" expanded="true" />
+            <element signature="e#6249#6281#0" expanded="true" />
+            <element signature="e#6351#6384#0" expanded="true" />
+            <element signature="e#6453#6485#0" expanded="true" />
+            <element signature="e#6553#6584#0" expanded="true" />
+            <element signature="e#6655#6689#0" expanded="true" />
+            <element signature="e#8222#8496#0" expanded="true" />
+            <element signature="e#8485#8486#0" expanded="true" />
+            <element signature="e#8585#8750#0" expanded="true" />
+            <element signature="e#8739#8740#0" expanded="true" />
           </folding>
         </state>
       </provider>

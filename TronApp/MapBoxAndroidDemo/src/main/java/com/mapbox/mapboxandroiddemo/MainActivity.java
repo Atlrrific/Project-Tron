@@ -85,6 +85,7 @@ public class MainActivity extends ActionBarActivity {
 
         locationManager = (LocationManager) getSystemService(mContext.LOCATION_SERVICE);
 
+        LatLng lastLocation  =  new LatLng(0,0);
 
         LocationListener listener =  new LocationListener() {
             @Override

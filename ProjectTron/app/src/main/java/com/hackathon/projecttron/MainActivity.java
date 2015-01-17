@@ -132,7 +132,7 @@ public class MainActivity extends Activity {
             if (i > 0){
                 Point pp = myPath.get(i-1);
                 Point tp = myPath.get(i);
-                c.drawLine(pp.x, pp.y, tp.x, tp.y, paint);
+                c.drawLine(pp.x + xAug, pp.y + yAug, tp.x, tp.y, paint);
             }
         }
         paint.setColor(Color.RED);
@@ -140,7 +140,7 @@ public class MainActivity extends Activity {
             if (i > 0){
                 Point pp = hisPath.get(i-1);
                 Point tp = hisPath.get(i);
-                c.drawLine(pp.x, pp.y, tp.x, tp.y, paint);
+                c.drawLine(pp.x + xAug, pp.y + yAug, tp.x, tp.y, paint);
             }
         }
 

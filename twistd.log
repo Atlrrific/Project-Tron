@@ -1,0 +1,17 @@
+2015-01-17 01:03:24-0500 [-] Log opened.
+2015-01-17 01:03:24-0500 [-] twistd 14.0.2 (/usr/bin/python 2.7.6) starting up.
+2015-01-17 01:03:24-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2015-01-17 01:03:24-0500 [-] Site starting on 5000
+2015-01-17 01:03:24-0500 [-] Starting factory <twisted.web.server.Site instance at 0x7f68f1fd1200>
+2015-01-17 01:03:31-0500 [-] "35.2.83.104" - - [17/Jan/2015:06:03:31 +0000] "GET / HTTP/1.1" 200 12 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 01:07:21-0500 [-] Log opened.
+2015-01-17 01:07:21-0500 [-] twistd 14.0.2 (/usr/bin/python 2.7.6) starting up.
+2015-01-17 01:07:21-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2015-01-17 01:07:21-0500 [-] Site starting on 5000
+2015-01-17 01:07:21-0500 [-] Starting factory <twisted.web.server.Site instance at 0x7fe657ef1b00>
+2015-01-17 01:07:34-0500 [-] "35.2.83.104" - - [17/Jan/2015:06:07:33 +0000] "GET / HTTP/1.1" 200 12 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 01:07:48-0500 [-] "66.220.156.114" - - [17/Jan/2015:06:07:47 +0000] "GET / HTTP/1.1" 200 12 "-" "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)"
+2015-01-17 01:07:57-0500 [-] "35.2.83.104" - - [17/Jan/2015:06:07:56 +0000] "GET / HTTP/1.1" 200 12 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 01:36:24-0500 [-] "35.2.77.50" - - [17/Jan/2015:06:36:23 +0000] "GET / HTTP/1.1" 200 12 "-" "Mozilla/5.0 (Linux; Android 5.0.1; Nexus 5 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36"
+2015-01-17 01:36:24-0500 [-] "35.2.77.50" - - [17/Jan/2015:06:36:24 +0000] "GET /favicon.ico HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Linux; Android 5.0.1; Nexus 5 Build/LRX22C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.93 Mobile Safari/537.36"
+2015-01-17 02:02:07-0500 [-] "35.2.83.104" - - [17/Jan/2015:07:02:06 +0000] "GET /user/dvd HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"

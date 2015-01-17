@@ -60,6 +60,12 @@ public class MainActivity extends Activity {
     private View mView;
     private ArrayList<Point> myPath = new ArrayList<Point>();
     private ArrayList<Point> hisPath = new ArrayList<Point>();
+<<<<<<< HEAD
+    private boolean running;
+    private float posX;
+    private float posY;
+=======
+>>>>>>> 10f8b992b15b0d6553a4e5ea0ef6a7b59b3915de
     private float yAug;
     private float xAug;
     private boolean running;
@@ -115,13 +121,19 @@ public class MainActivity extends Activity {
         handler.post(new Runnable(){
             @Override
             public void run() {
+<<<<<<< HEAD
+                if(running){
+=======
                 if (running){
+>>>>>>> 10f8b992b15b0d6553a4e5ea0ef6a7b59b3915de
                     yAug = posY - 180;
                     xAug = posX - 320;
                 }
                 handler.postDelayed(this, 500);
             }
         });
+<<<<<<< HEAD
+=======
 
         posHandler = new Handler();
         posHandler.post(new Runnable(){
@@ -136,6 +148,7 @@ public class MainActivity extends Activity {
                 posHandler.postDelayed(this, 1000);
             }
         });
+>>>>>>> 10f8b992b15b0d6553a4e5ea0ef6a7b59b3915de
     }
 
     @Override
@@ -148,6 +161,10 @@ public class MainActivity extends Activity {
     protected void onPause() {
         mCardScroller.deactivate();
         super.onPause();
+    }
+
+    public void onDead() {
+
     }
 
     /**

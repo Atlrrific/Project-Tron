@@ -6,7 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.Location;
 import android.location.LocationListener;
-import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
@@ -15,13 +15,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import com.crashlytics.android.Crashlytics;
 import com.mapbox.mapboxsdk.api.ILatLng;
 import com.mapbox.mapboxsdk.geometry.BoundingBox;
 import com.mapbox.mapboxsdk.geometry.LatLng;
-import com.mapbox.mapboxsdk.overlay.GpsLocationProvider;
 import com.mapbox.mapboxsdk.overlay.Icon;
 import com.mapbox.mapboxsdk.overlay.Marker;
 import com.mapbox.mapboxsdk.overlay.UserLocationOverlay;
@@ -30,6 +28,15 @@ import com.mapbox.mapboxsdk.views.MapView;
 import com.mapbox.mapboxsdk.views.util.TilesLoadedListener;
 import android.location.LocationManager;
 import android.location.Criteria;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONObject;
+
 
 import java.util.List;
 
@@ -40,7 +47,7 @@ public class MainActivity extends ActionBarActivity {
 	private UserLocationOverlay myLocationOverlay;
 	private String currentMap = null;
     public static final String TAG = "GPS CHANGE";
-
+    private static final String URL = "http://104.131.15.54:5000/";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,9 +87,11 @@ public class MainActivity extends ActionBarActivity {
         LocationListener listener =  new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
-
                 Log.d(TAG,location.toString());
+                CoordinatesTask coordinatesTask = new CoordinatesTask();
 
+                //execute the POST
+                coordinatesTask.doInBackground(location.getLongitude() + "", location.getLatitude() + "", "test_name");
             }
 
             @Override
@@ -258,5 +267,45 @@ public class MainActivity extends ActionBarActivity {
 
         // Showing Alert Message
         alertDialog.show();
+    }
+
+    private class CoordinatesTask extends AsyncTask<String, String, String>{
+        private JSONObject result;
+
+        @Override
+        protected String doInBackground(String... params){
+            postData(params[0], params[1], params[2]);
+            return "";
+        }
+
+        public void postData(String longitude, String latitude, String name){
+            DefaultHttpClient client = new DefaultHttpClient();
+            JSONObject coordinate_json = new JSONObject();
+            Log.d(TAG, "in postData longitude - " + longitude + " latitude - " + latitude + "name - " + name);
+            try {
+                coordinate_json.put("longitude", longitude);
+                coordinate_json.put("latitude", latitude);
+                coordinate_json.put("name", name);
+                HttpPost post_request = new HttpPost(URL + "coordinates");
+                StringEntity params = new StringEntity(coordinate_json.toString());
+                post_request.addHeader("content-type", "application/json");
+                post_request.setEntity(params);
+
+                HttpResponse response = client.execute(post_request);
+                HttpEntity entity = response.getEntity();
+                String entity_string = EntityUtils.toString(entity);
+
+                result = new JSONObject(entity_string);
+
+                Log.d(TAG, "success: " + result.getString("success"));
+
+            } catch (Exception ex) {
+                Log.d(TAG, "Exception: " + ex.toString());
+            } finally {
+                client.getConnectionManager().shutdown();
+                Log.d(TAG, "Finished");
+            }
+        }
+
     }
 }

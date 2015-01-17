@@ -20,4 +20,17 @@ def user(id):
     result = collection.find_one({'_id': id}) 
     return Response(json.dumps(result), mimetype='application/json')
 
+@app.route('/coordinates', methods=['POST'])
+def coordinates():
+    usr_object = request.get_json(force=True)
+    insert_query = collection.update({'_id':usr_object['_id']}, {'posX': usr_object['posX'], 'posY': usr_object['posY'], 'counter':usr_object['counter']},upsert=True)
+    result = {
+        'success': 'False'    
+    }
+    
+    if insert_query is not None:
+        result['success'] = 'True'
+        return Response(json.dumps(result), mimetype='application/json')
 
+    return Response(json.dumps(result), mimetype='application/json')
+     

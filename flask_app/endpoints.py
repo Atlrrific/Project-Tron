@@ -31,7 +31,7 @@ def coordinates():
         })
 
     insert_query = collection.update({'_id' : usr_object['_id']},
-                                     {'coordinates': user['coordinates'].append((usr_object['latitude'], usr_object['longitude'])},
+                                     {'coordinates': user['coordinates'].append((usr_object['latitude'], usr_object['longitude']))},
                                       upsert=True)
     result = {
         'success': 'False'    

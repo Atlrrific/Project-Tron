@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationListener;
 import android.net.Uri;
@@ -16,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import com.crashlytics.android.Crashlytics;
 import com.mapbox.mapboxsdk.api.ILatLng;
@@ -24,6 +26,7 @@ import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.overlay.GpsLocationProvider;
 import com.mapbox.mapboxsdk.overlay.Icon;
 import com.mapbox.mapboxsdk.overlay.Marker;
+import com.mapbox.mapboxsdk.overlay.PathOverlay;
 import com.mapbox.mapboxsdk.overlay.UserLocationOverlay;
 import com.mapbox.mapboxsdk.tileprovider.tilesource.*;
 import com.mapbox.mapboxsdk.views.MapView;
@@ -41,12 +44,17 @@ public class MainActivity extends ActionBarActivity {
 	private String currentMap = null;
     public static final String TAG = "GPS CHANGE";
 
+    public static  final PathOverlay line = new PathOverlay(Color.RED, 3);
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Crashlytics.start(this);
 
         setContentView(R.layout.activity_main);
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
@@ -77,11 +85,14 @@ public class MainActivity extends ActionBarActivity {
 
         locationManager = (LocationManager) getSystemService(mContext.LOCATION_SERVICE);
 
+
         LocationListener listener =  new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
 
                 Log.d(TAG,location.toString());
+                line.addPoint(new LatLng(location.getLatitude(), location.getLongitude()));
+                mv.getOverlays().add(line);
 
             }
 
@@ -111,8 +122,8 @@ public class MainActivity extends ActionBarActivity {
                 criteria, true /* enabledOnly */);
 
         for (String provider : providers) {
-            locationManager.requestLocationUpdates(provider, 300,
-                    3, listener);
+            locationManager.requestLocationUpdates(provider, 100,
+                    1, listener);
         }
 
         replaceMapView(getString(R.string.spaceShipMapId));

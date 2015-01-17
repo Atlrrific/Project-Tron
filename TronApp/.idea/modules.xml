@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MapBoxAndroidDemo/MapBoxAndroidDemo.iml" filepath="$PROJECT_DIR$/MapBoxAndroidDemo/MapBoxAndroidDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mapbox-android-demo.iml" filepath="$PROJECT_DIR$/mapbox-android-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TronApp.iml" filepath="$PROJECT_DIR$/TronApp.iml" />
     </modules>
   </component>
 </project>

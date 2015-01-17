@@ -27,7 +27,7 @@ def coordinates():
     
     if user is None:
         collection.insert({ '_id' : usr_object['_id'],
-                            'coordinates': []
+                            'coordinates': [(usr_object['latitude'], usr_object['longitude'])]
         })
 
     insert_query = collection.update({'_id' : usr_object['_id']},

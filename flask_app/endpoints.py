@@ -38,9 +38,13 @@ def coordinates():
     usr_object = request.get_json(force=True)
     user = collection.find_one({'_id' : usr_object['_id']}) 
 
+    if usr_object['_id'] == 'player_one' and user is not None:
+        usr_object['_id'] = 'player_two'
+         
     other_player = 'False'
     other_player_name = 'player_one'
-     
+    
+          
     if usr_object['_id'] == 'player_one':
         other_player_name = 'player_two'
         

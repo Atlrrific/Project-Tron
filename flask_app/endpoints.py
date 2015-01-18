@@ -26,13 +26,19 @@ def coordinates():
     user = collection.find_one({'_id' : usr_object['_id']}) 
     
     if user is None:
-        collection.insert({ '_id' : usr_object['_id'],
+        print 'user is none' 
+        insert_query = collection.insert({ '_id' : usr_object['_id'],
                             'coordinates': [(usr_object['latitude'], usr_object['longitude'])]
         })
 
-    insert_query = collection.update({'_id' : usr_object['_id']},
-                                     {'coordinates': user['coordinates'].append((usr_object['latitude'], usr_object['longitude']))},
-                                      upsert=True)
+    else: 
+        user['coordinates'].append((usr_object['latitude'], usr_object['longitude'])) 
+        insert_query = collection.update(
+            {'_id' : usr_object['_id']},
+            user,
+            upsert=False)
+        
+
     result = {
         'success': 'False'    
     }

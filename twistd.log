@@ -1030,3 +1030,81 @@
 2015-01-17 18:54:09-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
 2015-01-17 18:54:09-0500 [-] Site starting on 5000
 2015-01-17 18:54:09-0500 [-] Starting factory <twisted.web.server.Site instance at 0x7fc90f7d1b90>
+2015-01-17 18:57:35-0500 [-] Log opened.
+2015-01-17 18:57:35-0500 [-] twistd 14.0.2 (/usr/bin/python 2.7.6) starting up.
+2015-01-17 18:57:35-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2015-01-17 18:57:35-0500 [-] Site starting on 5000
+2015-01-17 18:57:35-0500 [-] Starting factory <twisted.web.server.Site instance at 0x7fa6295c4b90>
+2015-01-17 18:58:21-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 34, in coordinates
+	    {'coordinates': user['coordinates'].append((usr_object['latitude'], usr_object['longitude']))},
+	exceptions.KeyError: 'coordinates'
+	
+2015-01-17 18:58:21-0500 [-] "35.2.83.104" - - [17/Jan/2015:23:58:20 +0000] "POST /coordinates HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 18:58:33-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 34, in coordinates
+	    {'coordinates': user['coordinates'].append((usr_object['latitude'], usr_object['longitude']))},
+	exceptions.TypeError: 'NoneType' object has no attribute '__getitem__'
+	
+2015-01-17 18:58:33-0500 [-] "35.2.83.104" - - [17/Jan/2015:23:58:33 +0000] "POST /coordinates HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 19:47:19-0500 [-] Received SIGTERM, shutting down.
+2015-01-17 19:47:19-0500 [-] (TCP Port 5000 Closed)
+2015-01-17 19:47:19-0500 [-] Stopping factory <twisted.web.server.Site instance at 0x7fa6295c4b90>
+2015-01-17 19:47:19-0500 [-] Main loop terminated.
+2015-01-17 19:47:19-0500 [-] Server Shut Down.

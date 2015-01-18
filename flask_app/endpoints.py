@@ -27,7 +27,7 @@ def user(id):
     
     if check is not None: 
         result['other_player'] = 'True'
-    
+    if result is not None:    
     collection.update({'_id' : id}, result, upsert=False)
 
       

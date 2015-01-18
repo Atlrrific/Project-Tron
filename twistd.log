@@ -1224,3 +1224,24 @@
 2015-01-17 21:18:34-0500 [-] "35.2.84.89" - - [18/Jan/2015:02:18:34 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
 2015-01-17 21:18:50-0500 [-] "35.2.84.89" - - [18/Jan/2015:02:18:49 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
 2015-01-17 21:19:30-0500 [-] "35.2.84.89" - - [18/Jan/2015:02:19:29 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:08:05-0500 [-] Log opened.
+2015-01-18 01:08:05-0500 [-] twistd 14.0.2 (/usr/bin/python 2.7.6) starting up.
+2015-01-18 01:08:05-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2015-01-18 01:08:05-0500 [-] Site starting on 5000
+2015-01-18 01:08:05-0500 [-] Starting factory <twisted.web.server.Site instance at 0x7f52d6016cb0>
+2015-01-18 01:08:20-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:08:19 +0000] "POST /clear_data HTTP/1.1" 200 19 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:08:20-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:08:20 +0000] "POST /clear_data HTTP/1.1" 200 19 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:08:20-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:08:20 +0000] "POST /clear_data HTTP/1.1" 200 19 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:08:20-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:08:20 +0000] "POST /clear_data HTTP/1.1" 200 19 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:08:59-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:08:59 +0000] "POST /coordinates HTTP/1.1" 400 192 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:09:24-0500 [HTTPChannel,1,35.2.84.89] user is none
+2015-01-18 01:09:24-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:09:23 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:10:08-0500 [HTTPChannel,2,35.2.84.89] user is none
+2015-01-18 01:10:08-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:10:08 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:10:19-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:10:19 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:10:34-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:10:34 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:11:41-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:11:41 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:12:36-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:12:36 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:12:54-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:12:54 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:13:29-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:13:29 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:13:42-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:13:42 +0000] "POST /coordinates HTTP/1.1" 200 40 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"

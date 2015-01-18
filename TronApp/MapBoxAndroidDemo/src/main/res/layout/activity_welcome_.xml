@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mapbox.mapboxandroiddemo.Welcome_Activity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tronImage"
+        android:scaleType="fitXY"
+        android:src="@drawable/tron_image"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:textColor="#ff370302"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"  />
+
+</RelativeLayout>

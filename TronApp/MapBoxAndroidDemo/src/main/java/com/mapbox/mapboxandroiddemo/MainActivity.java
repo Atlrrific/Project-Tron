@@ -36,6 +36,7 @@ import android.location.LocationManager;
 import android.location.Criteria;
 import android.widget.Toast;
 
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -62,8 +63,11 @@ public class MainActivity extends ActionBarActivity {
 
     public static  final PathOverlay line = new PathOverlay(Color.RED, 3);
     public static  final PathOverlay line2 = new PathOverlay(Color.BLUE, 3);
+    public static Double [][] OTHERPATH;
+    public static int currIndex;
     JSONObject json_obj = new JSONObject();
     public static Context mContext;
+    List<String> other_coordinates;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +76,16 @@ public class MainActivity extends ActionBarActivity {
 
         setContentView(R.layout.activity_main);
 
+        OTHERPATH = new Double[][]{{42.29284096,-83.71411208}, {42.2928653, -83.71409067},{42.29282951, -83.71416679},{42.29280455, -83.7141925},{42.29278281, -83.71421613},
+                {42.2927706, -83.71425203},
+                {42.2925755, -83.71455351},
+                {42.29255717, -83.71452052},
+                {42.29253018, -83.71452823},
+                {42.29251416, -83.71456116},
+                {42.29249824, -83.71456508},
+                {42.292518, -83.71459862},
+                {42.29252331, -83.71454932}};
+        currIndex = 0;
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
@@ -94,7 +108,6 @@ public class MainActivity extends ActionBarActivity {
         myLocationOverlay.enableMyLocation();
         myLocationOverlay.setDrawAccuracyEnabled(true);
         mv.getOverlays().add(myLocationOverlay);*/
-
         ///GETTING GPS DATA FROM PHONE SENSOR
 
 
@@ -103,10 +116,6 @@ public class MainActivity extends ActionBarActivity {
 
         locationManager = (LocationManager) getSystemService(mContext.LOCATION_SERVICE);
 
-
-
-
-
         LocationListener listener =  new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
@@ -114,6 +123,17 @@ public class MainActivity extends ActionBarActivity {
                 Log.d(TAG,location.toString());
                 line.addPoint(new LatLng(location.getLatitude(), location.getLongitude()));
                 mv.getOverlays().add(line);
+
+                try{
+                    currIndex++;
+                    Log.d(TAG, "drawingggggg!!!");
+                    line2.addPoint(new LatLng(OTHERPATH[currIndex][0], OTHERPATH[currIndex][1]));
+                    Log.d(TAG, "Latitude " + OTHERPATH[currIndex][0]+ " " + OTHERPATH[currIndex][1]);
+                    mv.getOverlays().add(line2);
+                }catch(Exception e){
+                    Log.d(TAG, e.toString());
+                }
+
 //
 //                P2CoordinateTask player_two_task = new P2CoordinateTask();
 //                player_two_task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
@@ -140,8 +160,7 @@ public class MainActivity extends ActionBarActivity {
                 //execute the POST
                 CoordinatesTask coordinatesTask = new CoordinatesTask();
                 coordinatesTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,
-                        location.getLongitude() + "", location.getLatitude() + "", "player_two");
-                json_obj = coordinatesTask.result;
+                        location.getLongitude() + "", location.getLatitude() + "", "player_one");
 //                try {
 //                    if (coordinatesTask.result.get("collision").equals("True")) {
 //                        Toast.makeText(mContext, "Game over.", Toast.LENGTH_LONG).show();
@@ -180,21 +199,24 @@ public class MainActivity extends ActionBarActivity {
         Log.d(TAG, "LIST OF PROVIDERSSSSS" +  providers.toString());
         for (String provider : providers) {
             Log.d(TAG, "Look check look check look check");
-            locationManager.requestLocationUpdates(provider, 200,
+            locationManager.requestLocationUpdates(provider, 300,
                     3, listener);
         }
-
-//        Toast.makeText(this, "testing", Toast.LENGTH_LONG).show();
-        try {
-                   if (json_obj.get("collision").equals("True")) {
-                       Log.d(TAG, "COLLISION");
-                        Toast.makeText(mContext, "Game over.", Toast.LENGTH_LONG).show();
-                    }
-         }
-
-        catch (Exception e){
-            Log.d(TAG, "Exception - " + e.toString());
-        }
+//        P1CoordinateTask other_user = new P1CoordinateTask();
+//        other_user.execute();
+//        other_coordinates = other_user.tmp;
+//        Log.d(TAG, other_coordinates.toString());
+////        Toast.makeText(this, "testing", Toast.LENGTH_LONG).show();
+//        try {
+//                   if (json_obj.get("collision").equals("True")) {
+//                       Log.d(TAG, "COLLISION");
+//                        Toast.makeText(mContext, "Game over.", Toast.LENGTH_LONG).show();
+//                    }
+//         }
+//
+//        catch (Exception e){
+//            Log.d(TAG, "Exception - " + e.toString());
+//        }
 
 
         // Register the listener with the Location Manager to receive location updates
@@ -236,7 +258,6 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 //        mv.setVisibility(View.VISIBLE);
-
 
 	}
 
@@ -404,12 +425,13 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
-    private class P2CoordinateTask extends AsyncTask<String, String, String>{
+    private class P1CoordinateTask extends AsyncTask<String, String, String>{
         private JSONObject result;
         private List<String> tmp;
 
         @Override
         protected String doInBackground(String... params){
+            Log.d(TAG, "GET REQUESTTTT");
             getData();
             return "";
         }
@@ -434,7 +456,8 @@ public class MainActivity extends ActionBarActivity {
                 String entity_string = EntityUtils.toString(entity);
 
                 result = new JSONObject(entity_string);
-
+                Log.d(TAG, result.toString());
+                tmp = (List) result.get("coordinates");
 
 
                 Log.d(TAG, "success: " + result.getString("success"));

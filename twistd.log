@@ -1108,3 +1108,607 @@
 2015-01-17 19:47:19-0500 [-] Stopping factory <twisted.web.server.Site instance at 0x7fa6295c4b90>
 2015-01-17 19:47:19-0500 [-] Main loop terminated.
 2015-01-17 19:47:19-0500 [-] Server Shut Down.
+2015-01-17 19:47:50-0500 [-] Log opened.
+2015-01-17 19:47:50-0500 [-] twistd 14.0.2 (/usr/bin/python 2.7.6) starting up.
+2015-01-17 19:47:50-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2015-01-17 19:47:50-0500 [-] Site starting on 5000
+2015-01-17 19:47:50-0500 [-] Starting factory <twisted.web.server.Site instance at 0x7f413ead1ab8>
+2015-01-17 20:02:30-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:02:30 +0000] "GET /user/test_name HTTP/1.1" 200 4 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:02:31-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:02:31 +0000] "GET /user/test_name HTTP/1.1" 200 4 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:02:32-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:02:31 +0000] "GET /user/test_name HTTP/1.1" 200 4 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:04:48-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:04:47 +0000] "GET /user/test_name HTTP/1.1" 200 4 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:20:35-0500 [HTTPChannel,1,35.2.84.89] user is none
+2015-01-17 20:20:35-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:20:34 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:21:12-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:21:11 +0000] "GET /user/test_name HTTP/1.1" 200 68 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:23:13-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:23:13 +0000] "GET /user/test_name HTTP/1.1" 200 68 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:24:18-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:24:17 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:24:41-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:24:40 +0000] "GET /user/test_name HTTP/1.1" 200 99 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:24:49-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:24:48 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:25:46-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:45 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:51-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:50 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:51-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:50 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:51-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:51 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:52-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:51 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:53-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:52 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:53-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:52 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:54-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:53 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:54-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:53 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:55-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:54 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:55-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:54 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:55-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:54 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:56-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:55 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:56-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:55 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:56-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:55 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:56-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:55 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:57-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:56 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:57-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:56 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:57-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:56 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:57-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:56 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:58-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:57 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:58-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:57 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:58-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:57 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:58-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:57 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:59-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:58 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:59-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:58 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:59-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:58 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:59-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:58 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:25:59-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:59 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:00-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:59 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:00-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:59 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:00-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:59 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:00-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:25:59 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:01-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:00 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:01-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:00 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:01-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:00 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:01-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:00 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:01-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:00 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:01-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:01 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:02-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:01 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:02-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:01 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:02-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:01 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:02-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:01 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:02-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:01 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:03-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:02 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:03-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:02 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:03-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:02 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:03-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:02 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:03-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:02 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:03-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:02 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:04-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:03 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:04-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:03 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:04-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:03 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:04-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:03 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:04-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:03 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:04-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:03 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:04-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:03 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:14-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:13 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:26:15-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:26:14 +0000] "GET /user/test_name HTTP/1.1" 200 129 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:29:04-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:29:03 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:29:58-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:29:57 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:32:59-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:32:59 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:33:39-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:33:39 +0000] "GET /user/test_name HTTP/1.1" 200 221 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:34:59-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:34:59 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:00-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:00 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:02-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:02 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:03-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:03 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:04-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:04 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:06-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:06 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:07-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:07 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:07-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:07 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:12-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:12 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:13-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:13 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:20-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:35:20 +0000] "GET /user/test_name HTTP/1.1" 200 541 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:35:22-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:22 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:23-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:35:23 +0000] "GET /user/test_name HTTP/1.1" 200 572 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:35:25-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:25 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:27-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:35:27 +0000] "GET /user/test_name HTTP/1.1" 200 603 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:35:29-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:29 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:30-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:35:30 +0000] "GET /user/test_name HTTP/1.1" 200 634 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:35:34-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:34 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:38-0500 [-] "35.2.83.104" - - [18/Jan/2015:01:35:38 +0000] "GET /user/test_name HTTP/1.1" 200 665 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 20:35:39-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:39 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:44-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:44 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:54-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:54 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:35:59-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:35:59 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:36:04-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:36:04 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:36:09-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:36:09 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:36:14-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:36:14 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:36:25-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:36:25 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:36:30-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:36:30 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:36:41-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:36:40 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:36:51-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:36:51 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:37:07-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:37:07 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 20:39:26-0500 [-] "35.2.84.89" - - [18/Jan/2015:01:39:25 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 21:06:48-0500 [-] "35.2.83.104" - - [18/Jan/2015:02:06:47 +0000] "GET /user/test_name HTTP/1.1" 200 1063 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-17 21:17:55-0500 [-] "35.2.84.89" - - [18/Jan/2015:02:17:54 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 21:18:34-0500 [-] "35.2.84.89" - - [18/Jan/2015:02:18:34 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 21:18:50-0500 [-] "35.2.84.89" - - [18/Jan/2015:02:18:49 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-17 21:19:30-0500 [-] "35.2.84.89" - - [18/Jan/2015:02:19:29 +0000] "POST /coordinates HTTP/1.1" 200 19 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:08:05-0500 [-] Log opened.
+2015-01-18 01:08:05-0500 [-] twistd 14.0.2 (/usr/bin/python 2.7.6) starting up.
+2015-01-18 01:08:05-0500 [-] reactor class: twisted.internet.epollreactor.EPollReactor.
+2015-01-18 01:08:05-0500 [-] Site starting on 5000
+2015-01-18 01:08:05-0500 [-] Starting factory <twisted.web.server.Site instance at 0x7f52d6016cb0>
+2015-01-18 01:08:20-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:08:19 +0000] "POST /clear_data HTTP/1.1" 200 19 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:08:20-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:08:20 +0000] "POST /clear_data HTTP/1.1" 200 19 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:08:20-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:08:20 +0000] "POST /clear_data HTTP/1.1" 200 19 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:08:20-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:08:20 +0000] "POST /clear_data HTTP/1.1" 200 19 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:08:59-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:08:59 +0000] "POST /coordinates HTTP/1.1" 400 192 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:09:24-0500 [HTTPChannel,1,35.2.84.89] user is none
+2015-01-18 01:09:24-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:09:23 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:10:08-0500 [HTTPChannel,2,35.2.84.89] user is none
+2015-01-18 01:10:08-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:10:08 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:10:19-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:10:19 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:10:34-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:10:34 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:11:41-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:11:41 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:12:36-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:12:36 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:12:54-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:12:54 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:13:29-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:13:29 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:13:42-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:13:42 +0000] "POST /coordinates HTTP/1.1" 200 40 "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:14:49-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:14:49 +0000] "POST /clear_data HTTP/1.1" 200 19 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:14:58-0500 [HTTPChannel,10,35.2.83.104] user is none
+2015-01-18 01:14:58-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:14:57 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:14:59-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:14:59 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:14:59-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:14:59 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:00-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:00 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:01-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:00 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:01-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:01 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:01-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:01 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:01-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:01 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:06-0500 [HTTPChannel,10,35.2.83.104] user is none
+2015-01-18 01:15:06-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:06 +0000] "POST /coordinates HTTP/1.1" 200 41 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:07-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 97, in coordinates
+	    result['collision'] = str(calculateCollision(num_list_cur, num_list_other, 1))
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 23, in calculateCollision
+	    if iHateGeometry(start[0], start[1], end[0], end[1], tStart[0], tStart[1], tEnd[0], tEnd[1]):
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 48, in iHateGeometry
+	    s = (-s1_y * (p0_x - p2_x) + s1_x * (p0_y - p2_y)) / (-s2_x * s1_y + s1_x * s2_y)
+	exceptions.ZeroDivisionError: float division by zero
+	
+2015-01-18 01:15:07-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:07 +0000] "POST /coordinates HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:07-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 97, in coordinates
+	    result['collision'] = str(calculateCollision(num_list_cur, num_list_other, 1))
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 23, in calculateCollision
+	    if iHateGeometry(start[0], start[1], end[0], end[1], tStart[0], tStart[1], tEnd[0], tEnd[1]):
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 48, in iHateGeometry
+	    s = (-s1_y * (p0_x - p2_x) + s1_x * (p0_y - p2_y)) / (-s2_x * s1_y + s1_x * s2_y)
+	exceptions.ZeroDivisionError: float division by zero
+	
+2015-01-18 01:15:07-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:07 +0000] "POST /coordinates HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:07-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 97, in coordinates
+	    result['collision'] = str(calculateCollision(num_list_cur, num_list_other, 1))
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 17, in calculateCollision
+	    if iHateGeometry(start[0], start[1], end[0], end[1], tStart[0], tStart[1], tEnd[0], tEnd[1]):
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 48, in iHateGeometry
+	    s = (-s1_y * (p0_x - p2_x) + s1_x * (p0_y - p2_y)) / (-s2_x * s1_y + s1_x * s2_y)
+	exceptions.ZeroDivisionError: float division by zero
+	
+2015-01-18 01:15:07-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:07 +0000] "POST /coordinates HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:08-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 97, in coordinates
+	    result['collision'] = str(calculateCollision(num_list_cur, num_list_other, 1))
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 17, in calculateCollision
+	    if iHateGeometry(start[0], start[1], end[0], end[1], tStart[0], tStart[1], tEnd[0], tEnd[1]):
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 48, in iHateGeometry
+	    s = (-s1_y * (p0_x - p2_x) + s1_x * (p0_y - p2_y)) / (-s2_x * s1_y + s1_x * s2_y)
+	exceptions.ZeroDivisionError: float division by zero
+	
+2015-01-18 01:15:08-0500 [-] "35.2.84.89" - - [18/Jan/2015:06:15:08 +0000] "POST /coordinates HTTP/1.1" 500 - "-" "Apache-HttpClient/UNAVAILABLE (java 1.4)"
+2015-01-18 01:15:12-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 97, in coordinates
+	    result['collision'] = str(calculateCollision(num_list_cur, num_list_other, 1))
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 17, in calculateCollision
+	    if iHateGeometry(start[0], start[1], end[0], end[1], tStart[0], tStart[1], tEnd[0], tEnd[1]):
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 48, in iHateGeometry
+	    s = (-s1_y * (p0_x - p2_x) + s1_x * (p0_y - p2_y)) / (-s2_x * s1_y + s1_x * s2_y)
+	exceptions.ZeroDivisionError: float division by zero
+	
+2015-01-18 01:15:12-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:12 +0000] "POST /coordinates HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:20-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 196, in _worker
+	    result = context.call(ctx, function, *args, **kwargs)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 332, in run
+	    self.reactor.callFromThread(wsgiError, self.started, *exc_info())
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 97, in coordinates
+	    result['collision'] = str(calculateCollision(num_list_cur, num_list_other, 1))
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 17, in calculateCollision
+	    if iHateGeometry(start[0], start[1], end[0], end[1], tStart[0], tStart[1], tEnd[0], tEnd[1]):
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 48, in iHateGeometry
+	    s = (-s1_y * (p0_x - p2_x) + s1_x * (p0_y - p2_y)) / (-s2_x * s1_y + s1_x * s2_y)
+	exceptions.ZeroDivisionError: float division by zero
+	
+2015-01-18 01:15:20-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:19 +0000] "POST /coordinates HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:21-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 97, in coordinates
+	    result['collision'] = str(calculateCollision(num_list_cur, num_list_other, 1))
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 17, in calculateCollision
+	    if iHateGeometry(start[0], start[1], end[0], end[1], tStart[0], tStart[1], tEnd[0], tEnd[1]):
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 48, in iHateGeometry
+	    s = (-s1_y * (p0_x - p2_x) + s1_x * (p0_y - p2_y)) / (-s2_x * s1_y + s1_x * s2_y)
+	exceptions.ZeroDivisionError: float division by zero
+	
+2015-01-18 01:15:21-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:20 +0000] "POST /coordinates HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:21-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 97, in coordinates
+	    result['collision'] = str(calculateCollision(num_list_cur, num_list_other, 1))
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 17, in calculateCollision
+	    if iHateGeometry(start[0], start[1], end[0], end[1], tStart[0], tStart[1], tEnd[0], tEnd[1]):
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 48, in iHateGeometry
+	    s = (-s1_y * (p0_x - p2_x) + s1_x * (p0_y - p2_y)) / (-s2_x * s1_y + s1_x * s2_y)
+	exceptions.ZeroDivisionError: float division by zero
+	
+2015-01-18 01:15:21-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:21 +0000] "POST /coordinates HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:21-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 97, in coordinates
+	    result['collision'] = str(calculateCollision(num_list_cur, num_list_other, 1))
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 17, in calculateCollision
+	    if iHateGeometry(start[0], start[1], end[0], end[1], tStart[0], tStart[1], tEnd[0], tEnd[1]):
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 48, in iHateGeometry
+	    s = (-s1_y * (p0_x - p2_x) + s1_x * (p0_y - p2_y)) / (-s2_x * s1_y + s1_x * s2_y)
+	exceptions.ZeroDivisionError: float division by zero
+	
+2015-01-18 01:15:21-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:21 +0000] "POST /coordinates HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:21-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 97, in coordinates
+	    result['collision'] = str(calculateCollision(num_list_cur, num_list_other, 1))
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 17, in calculateCollision
+	    if iHateGeometry(start[0], start[1], end[0], end[1], tStart[0], tStart[1], tEnd[0], tEnd[1]):
+	  File "/root/Project-Tron/flask_app/util_functions/utils.py", line 48, in iHateGeometry
+	    s = (-s1_y * (p0_x - p2_x) + s1_x * (p0_y - p2_y)) / (-s2_x * s1_y + s1_x * s2_y)
+	exceptions.ZeroDivisionError: float division by zero
+	
+2015-01-18 01:15:21-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:21 +0000] "POST /coordinates HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:30-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:30 +0000] "GET /user/player_one HTTP/1.1" 200 327 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:15:55-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:15:55 +0000] "GET /user/player_two HTTP/1.1" 200 238 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:17:15-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:17:15 +0000] "POST /clear_data HTTP/1.1" 200 19 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:17:59-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 31, in user
+	    collection.update({'_id' : id}, result, upsert=False)
+	  File "/usr/local/lib/python2.7/dist-packages/pymongo/collection.py", line 517, in update
+	    raise TypeError("document must be an instance of dict")
+	exceptions.TypeError: document must be an instance of dict
+	
+2015-01-18 01:17:59-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:17:59 +0000] "GET /user/player_two HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"
+2015-01-18 01:18:01-0500 [-] WSGI application error
+	Traceback (most recent call last):
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/threadpool.py", line 217, in _worker
+	    o = self.q.get()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/python/context.py", line 83, in callWithContext
+	    self.contexts.pop()
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 340, in run
+	    self.started = True
+	--- <exception caught here> ---
+	  File "/usr/local/lib/python2.7/dist-packages/twisted/web/wsgi.py", line 315, in run
+	    appIterator = self.application(self.environ, self.startResponse)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1836, in __call__
+	    return self.wsgi_app(environ, start_response)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1820, in wsgi_app
+	    response = self.make_response(self.handle_exception(e))
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1403, in handle_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1817, in wsgi_app
+	    response = self.full_dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1477, in full_dispatch_request
+	    rv = self.handle_user_exception(e)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1381, in handle_user_exception
+	    reraise(exc_type, exc_value, tb)
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1475, in full_dispatch_request
+	    rv = self.dispatch_request()
+	  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1461, in dispatch_request
+	    return self.view_functions[rule.endpoint](**req.view_args)
+	  File "/root/Project-Tron/flask_app/endpoints.py", line 31, in user
+	    collection.update({'_id' : id}, result, upsert=False)
+	  File "/usr/local/lib/python2.7/dist-packages/pymongo/collection.py", line 517, in update
+	    raise TypeError("document must be an instance of dict")
+	exceptions.TypeError: document must be an instance of dict
+	
+2015-01-18 01:18:01-0500 [-] "35.2.83.104" - - [18/Jan/2015:06:18:00 +0000] "GET /user/player_two HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36"

@@ -34,6 +34,7 @@ import com.mapbox.mapboxsdk.views.MapView;
 import com.mapbox.mapboxsdk.views.util.TilesLoadedListener;
 import android.location.LocationManager;
 import android.location.Criteria;
+import android.widget.Toast;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -61,7 +62,7 @@ public class MainActivity extends ActionBarActivity {
 
     public static  final PathOverlay line = new PathOverlay(Color.RED, 3);
     public static  final PathOverlay line2 = new PathOverlay(Color.BLUE, 3);
-
+    JSONObject json_obj = new JSONObject();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,9 +98,13 @@ public class MainActivity extends ActionBarActivity {
 
 
         LocationManager locationManager; // initialized elsewhere
-        Context mContext =  this;
+        final Context mContext =  this;
 
         locationManager = (LocationManager) getSystemService(mContext.LOCATION_SERVICE);
+
+
+
+
 
         LocationListener listener =  new LocationListener() {
             @Override
@@ -108,9 +113,9 @@ public class MainActivity extends ActionBarActivity {
                 Log.d(TAG,location.toString());
                 line.addPoint(new LatLng(location.getLatitude(), location.getLongitude()));
                 mv.getOverlays().add(line);
-
+//
 //                P2CoordinateTask player_two_task = new P2CoordinateTask();
-//                player_two_task.execute();
+//                player_two_task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 //
 //                try{
 //                    String[][] tmp = (String[][]) player_two_task.result.get("coordinates");
@@ -135,6 +140,15 @@ public class MainActivity extends ActionBarActivity {
                 CoordinatesTask coordinatesTask = new CoordinatesTask();
                 coordinatesTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,
                         location.getLongitude() + "", location.getLatitude() + "", "player_two");
+                json_obj = coordinatesTask.result;
+//                try {
+//                    if (coordinatesTask.result.get("collision").equals("True")) {
+//                        Toast.makeText(mContext, "Game over.", Toast.LENGTH_LONG).show();
+//                    }
+//                }
+//                catch (JSONException e){
+//                    Log.d(TAG, "Exception - " + e.toString());
+//                }
             }
 
             @Override
@@ -153,6 +167,7 @@ public class MainActivity extends ActionBarActivity {
             }
         };
 
+
 // This example requests fine accuracy and requires altitude, but
 // these criteria could be whatever you want.
         Criteria criteria = new Criteria();
@@ -161,11 +176,28 @@ public class MainActivity extends ActionBarActivity {
 
         List<String> providers = locationManager.getProviders(
                 criteria, true /* enabledOnly */);
-
+        Log.d(TAG, "LIST OF PROVIDERSSSSS" +  providers.toString());
         for (String provider : providers) {
+            Log.d(TAG, "Look check look check look check");
             locationManager.requestLocationUpdates(provider, 300,
                     3, listener);
         }
+
+//        Toast.makeText(this, "testing", Toast.LENGTH_LONG).show();
+        try {
+                   if (json_obj.get("collision").equals("True")) {
+                       Log.d(TAG, "COLLISION");
+                        Toast.makeText(mContext, "Game over.", Toast.LENGTH_LONG).show();
+                    }
+         }
+
+        catch (Exception e){
+            Log.d(TAG, "Exception - " + e.toString());
+        }
+
+
+        // Register the listener with the Location Manager to receive location updates
+        //locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, listener);
 
         replaceMapView(getString(R.string.spaceShipMapId));
 
@@ -330,11 +362,11 @@ public class MainActivity extends ActionBarActivity {
         public void postData(String longitude, String latitude, String name){
             DefaultHttpClient client = new DefaultHttpClient();
             JSONObject coordinate_json = new JSONObject();
-            Log.d(TAG, "in postData longitude - " + longitude + " latitude - " + latitude + "name - " + "player_two");
+            Log.d(TAG, "in postData longitude - " + longitude + " latitude - " + latitude + "name - " + name);
             try {
                 coordinate_json.put("longitude", longitude);
                 coordinate_json.put("latitude", latitude);
-                coordinate_json.put("_id", "player_two");
+                coordinate_json.put("_id", name);
                 HttpPost post_request = new HttpPost(URL + "coordinates");
                 StringEntity params = new StringEntity(coordinate_json.toString());
                 post_request.addHeader("content-type", "application/json");
@@ -363,7 +395,7 @@ public class MainActivity extends ActionBarActivity {
 
         @Override
         protected String doInBackground(String... params){
-            postData(params[0], params[1], params[2]);
+            getData();
             return "";
         }
 
@@ -372,10 +404,9 @@ public class MainActivity extends ActionBarActivity {
 
         }
 
-        public void postData(String longitude, String latitude, String name){
+        public void getData(){
             DefaultHttpClient client = new DefaultHttpClient();
             JSONObject coordinate_json = new JSONObject();
-            Log.d(TAG, "in postData longitude - " + longitude + " latitude - " + latitude + "name - " + name);
             try {
 
 

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 
 import java.io.IOException;
 
@@ -23,6 +24,8 @@ public class Welcome_Activity extends ActionBarActivity {
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         new Thread(new Runnable()
         {

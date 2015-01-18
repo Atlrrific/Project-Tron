@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.Button;
 import com.crashlytics.android.Crashlytics;
 import com.mapbox.mapboxsdk.api.ILatLng;
@@ -48,6 +49,7 @@ public class MainActivity extends ActionBarActivity {
 	private String currentMap = null;
     public static final String TAG = "GPS CHANGE";
     private static final String URL = "http://104.131.15.54:5000/";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +60,7 @@ public class MainActivity extends ActionBarActivity {
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         mv = (MapView) findViewById(R.id.mapview);
 		mv.setMinZoomLevel(0);
@@ -88,10 +91,11 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onLocationChanged(Location location) {
                 Log.d(TAG,location.toString());
-                CoordinatesTask coordinatesTask = new CoordinatesTask();
 
                 //execute the POST
-                coordinatesTask.doInBackground(location.getLongitude() + "", location.getLatitude() + "", "test_name");
+                CoordinatesTask coordinatesTask = new CoordinatesTask();
+                coordinatesTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, location.getLongitude() + "", location.getLatitude() + "", "test_name");
+//                coordinatesTask.execute(location.getLongitude() + "", location.getLatitude() + "", "test_name");
             }
 
             @Override
@@ -276,6 +280,11 @@ public class MainActivity extends ActionBarActivity {
         protected String doInBackground(String... params){
             postData(params[0], params[1], params[2]);
             return "";
+        }
+
+        protected void onPostExecute(Double result){
+            Log.d(TAG, "finished POST request");
+
         }
 
         public void postData(String longitude, String latitude, String name){

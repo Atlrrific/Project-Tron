@@ -285,7 +285,7 @@ public class MainActivity extends ActionBarActivity {
             try {
                 coordinate_json.put("longitude", longitude);
                 coordinate_json.put("latitude", latitude);
-                coordinate_json.put("name", name);
+                coordinate_json.put("_id", name);
                 HttpPost post_request = new HttpPost(URL + "coordinates");
                 StringEntity params = new StringEntity(coordinate_json.toString());
                 post_request.addHeader("content-type", "application/json");

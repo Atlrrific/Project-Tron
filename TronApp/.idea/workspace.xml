@@ -44,8 +44,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MapBoxAndroidDemo/src/main/java/com/mapbox/mapboxandroiddemo/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.6137724" vertical-offset="630" max-vertical-offset="4635">
-              <caret line="300" column="0" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6407186" vertical-offset="3967" max-vertical-offset="4635">
+              <caret line="301" column="35" selection-start-line="301" selection-start-column="35" selection-end-line="301" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2176#2207#0" expanded="true" />
@@ -1027,8 +1027,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MapBoxAndroidDemo/src/main/java/com/mapbox/mapboxandroiddemo/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.6137724" vertical-offset="630" max-vertical-offset="4635">
-          <caret line="300" column="0" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6407186" vertical-offset="3967" max-vertical-offset="4635">
+          <caret line="301" column="35" selection-start-line="301" selection-start-column="35" selection-end-line="301" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2176#2207#0" expanded="true" />

@@ -63,6 +63,7 @@ public class MainActivity extends ActionBarActivity {
     public static  final PathOverlay line = new PathOverlay(Color.RED, 3);
     public static  final PathOverlay line2 = new PathOverlay(Color.BLUE, 3);
     JSONObject json_obj = new JSONObject();
+    public static Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,7 +99,7 @@ public class MainActivity extends ActionBarActivity {
 
 
         LocationManager locationManager; // initialized elsewhere
-        final Context mContext =  this;
+        mContext =  this;
 
         locationManager = (LocationManager) getSystemService(mContext.LOCATION_SERVICE);
 
@@ -179,7 +180,7 @@ public class MainActivity extends ActionBarActivity {
         Log.d(TAG, "LIST OF PROVIDERSSSSS" +  providers.toString());
         for (String provider : providers) {
             Log.d(TAG, "Look check look check look check");
-            locationManager.requestLocationUpdates(provider, 300,
+            locationManager.requestLocationUpdates(provider, 200,
                     3, listener);
         }
 
@@ -354,9 +355,19 @@ public class MainActivity extends ActionBarActivity {
             return "";
         }
 
-        protected void onPostExecute(Double result){
+        protected void onPostExecute(Double result_d){
             Log.d(TAG, "finished POST request");
 
+            try {
+                if (result.get("collision").equals("True")) {
+                    Log.d(TAG, "collision");
+                    Toast.makeText(mContext, "Collided", Toast.LENGTH_LONG).show();
+                }
+            }
+
+            catch (Exception e){
+                Log.d(TAG, e.toString());
+            }
         }
 
         public void postData(String longitude, String latitude, String name){
@@ -379,6 +390,10 @@ public class MainActivity extends ActionBarActivity {
                 result = new JSONObject(entity_string);
 
                 Log.d(TAG, "success: " + result.getString("success"));
+//                if(result.get("collision").equals("True")){
+//                    Log.d(TAG, "collision");
+//                    Toast.makeText(mContext, "Collided", Toast.LENGTH_LONG).show();
+//                }
 
             } catch (Exception ex) {
                 Log.d(TAG, "Exception: " + ex.toString());
@@ -410,7 +425,7 @@ public class MainActivity extends ActionBarActivity {
             try {
 
 
-                HttpGet get_request = new HttpGet(URL + "user/" + "player_two");
+                HttpGet get_request = new HttpGet(URL + "user/" + "player_one");
 
                 get_request.addHeader("content-type", "application/json");
 

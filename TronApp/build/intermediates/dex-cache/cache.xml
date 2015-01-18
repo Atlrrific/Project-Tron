@@ -2,9 +2,10 @@
 <items version="2" >
 
     <item
-        jar="/Users/Atl/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-urlconnection/2.0.0/afe8399d352713b66e597e9670c741d1e60ae923/okhttp-urlconnection-2.0.0.jar"
+        jar="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/0.5.1/classes.jar"
         jumboMode="false"
         revision="21.1.2"
+<<<<<<< HEAD
         sha1="afe8399d352713b66e597e9670c741d1e60ae923">
         <dex dex="/Users/Atl/GitHub/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/okhttp-urlconnection-2.0.0-f0063d0fbd60b0fdd4d642576627fda57639aed5.jar" />
     </item>
@@ -63,12 +64,73 @@
         revision="21.1.2"
         sha1="0e821eafa1bf489a26bdb71f95078c26785b37a1">
         <dex dex="/Users/Atl/GitHub/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/crashlytics-1.1.13-d215e798cf6be2b003657259033c960254f46b50.jar" />
+=======
+        sha1="f1b8986f28e785758bde4c16b6dba12013b9767a">
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/classes-208d96fc64ae8d1882efff305fb9e25ce80cd64a.jar" />
     </item>
     <item
-        jar="/Users/Atl/.gradle/caches/modules-2/files-2.1/com.jakewharton/disklrucache/2.0.2/93b399470e72c0bc8cb52379943b63c9aa586cd8/disklrucache-2.0.2.jar"
+        jar="/Users/danieldao/.gradle/caches/modules-2/files-2.1/com.crashlytics.android/crashlytics/1.1.13/e821eafa1bf489a26bdb71f95078c26785b37a1/crashlytics-1.1.13.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0e821eafa1bf489a26bdb71f95078c26785b37a1">
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/crashlytics-1.1.13-580dfaab6e61a04130cecab026cdd36cf74dbbf6.jar" />
+    </item>
+    <item
+        jar="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/classes-2ce38cab3091ad3571cbfb578d611eb15c49eab6.jar" />
+    </item>
+    <item
+        jar="/Users/danieldao/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.0.0/4c8d1536dba3812cc1592090dc20c47a4ed3c35e/okhttp-2.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4c8d1536dba3812cc1592090dc20c47a4ed3c35e">
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/okhttp-2.0.0-934926e6ab2f87b8195651486415f4cb549b478a.jar" />
+    </item>
+    <item
+        jar="/Users/danieldao/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.0.0/2534c458682c73f5b9871131ab3098d3f987ca3/okio-1.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="02534c458682c73f5b9871131ab3098d3f987ca3">
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/okio-1.0.0-32e71bc89893ffa0948b342fbcf964a2756c7ef6.jar" />
+    </item>
+    <item
+        jar="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e5531cb41e35c81a051a274945542f6b31e4c97e">
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/classes-8a7cd119532cfdf7faa112fb04bcb09a727488ee.jar" />
+    </item>
+    <item
+        jar="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/classes-64d902746ae740537029dabd652edeb656646ddb.jar" />
+    </item>
+    <item
+        jar="/Users/danieldao/Documents/JavaCode/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-32ecf2fd43c6a3369dcfa4944f3cc4f00d959211.jar" />
+    </item>
+    <item
+        jar="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/exploded-aar/com.cocoahero.android/geojson/1.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="713add373e8a2da3d2b4dd7d5afbdb7c75f5d976">
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/classes-bd34cc45097c17c959812fd87eb1bacdcb994c4e.jar" />
+>>>>>>> gps_data
+    </item>
+    <item
+        jar="/Users/danieldao/.gradle/caches/modules-2/files-2.1/com.jakewharton/disklrucache/2.0.2/93b399470e72c0bc8cb52379943b63c9aa586cd8/disklrucache-2.0.2.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="93b399470e72c0bc8cb52379943b63c9aa586cd8">
+<<<<<<< HEAD
         <dex dex="/Users/Atl/GitHub/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/disklrucache-2.0.2-41ea75db60481005482f0169e5b15e22e75f2fda.jar" />
     </item>
     <item
@@ -91,6 +153,30 @@
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
         <dex dex="/Users/Atl/GitHub/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-7521173c56a8794a6aca56cf5ef6ffd079574069.jar" />
+=======
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/disklrucache-2.0.2-e7ee39977a1eda1cb4430757a939bcdc9f2a6424.jar" />
+    </item>
+    <item
+        jar="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-8f1d034c6d85baca79ed707b8ab368c77d77e1c6.jar" />
+    </item>
+    <item
+        jar="/Users/danieldao/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-urlconnection/2.0.0/afe8399d352713b66e597e9670c741d1e60ae923/okhttp-urlconnection-2.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="afe8399d352713b66e597e9670c741d1e60ae923">
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/okhttp-urlconnection-2.0.0-63611ed3eaf4a2816e831c6a313f7d9db654c451.jar" />
+    </item>
+    <item
+        jar="/Users/danieldao/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/danieldao/Documents/Projects/Project-Tron/TronApp/MapBoxAndroidDemo/build/intermediates/pre-dexed/debug/library-2.4.0-163256417ac2d4177078fa9ddbfa2ab2f8fad53d.jar" />
+>>>>>>> gps_data
     </item>
 
 </items>
